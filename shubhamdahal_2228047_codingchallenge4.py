@@ -1,21 +1,16 @@
 # Coding Challenge 3, hangman.py
 # Name:Shubham Dahal
-# Student No:2228047
+
 
 # Hangman Game
 
 # -----------------------------------
-# Helper code
-# You don't need to understand this helper code,
-# but you will have to know how to use the functions
-# (so be sure to read the docstrings!)
 import random
 import string
 
 WORDLIST_FILENAME = "words.txt"
 alphabets = string.ascii_lowercase
-# Responses to in-game events
-# Use the format function to fill in the spaces
+
 responses = [
     "I am thinking of a word that is {0} letters long",
     "Congratulations, you won!",
@@ -42,7 +37,7 @@ def choose_random_word(all_words):
     return random.choice(all_words)
 
 
-# end of helper code
+
 
 
 def load_words():
